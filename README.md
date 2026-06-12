@@ -29,7 +29,7 @@ pnpm run seed
 pnpm run dev
 ```
 
-El servidor queda disponible en `http://localhost:4321`.
+El servidor queda disponible en `http://:4321`.
 
 ## Endpoints
 
@@ -37,7 +37,7 @@ El servidor queda disponible en `http://localhost:4321`.
 Información general de la API.
 
 ```bash
-xh GET localhost:4321/
+xh GET :4321/
 ```
 
 ---
@@ -46,14 +46,14 @@ xh GET localhost:4321/
 Lista los slugs de todos los mundiales.
 
 ```bash
-xh GET localhost:4321/mundiales
+xh GET :4321/mundiales
 ```
 
 ### `GET /mundiales?include=full`
 Lista todos los mundiales con todos sus campos.
 
 ```bash
-xh GET localhost:4321/mundiales include==full
+xh GET :4321/mundiales include==full
 ```
 
 ---
@@ -62,8 +62,8 @@ xh GET localhost:4321/mundiales include==full
 Devuelve el detalle de un mundial por su slug. Retorna `404` si no existe.
 
 ```bash
-xh GET localhost:4321/mundial/qatar-2022
-xh GET localhost:4321/mundial/brasil-2014
+xh GET :4321/mundial/qatar-2022
+xh GET :4321/mundial/brasil-2014
 ```
 
 ---
@@ -72,7 +72,7 @@ xh GET localhost:4321/mundial/brasil-2014
 Devuelve un mundial aleatorio.
 
 ```bash
-xh GET localhost:4321/random
+xh GET :4321/random
 ```
 
 ---
@@ -91,8 +91,8 @@ Busca mundiales por texto en nombre, sede, campeón o descripción.
 Retorna `400` si el texto tiene menos de 3 caracteres.
 
 ```bash
-xh GET localhost:4321/search/qatar
-xh GET localhost:4321/search/ar
+xh GET :4321/search/qatar
+xh GET :4321/search/ar
 ```
 
 ---
@@ -102,7 +102,7 @@ xh GET localhost:4321/search/ar
 Las imágenes de cada mundial se sirven desde `/imagenes/`.
 
 ```bash
-xh GET localhost:4321/imagenes/qatar-2022.png
+xh GET :4321/imagenes/qatar-2022.png
 ```
 
 ## Capturas de pruebas

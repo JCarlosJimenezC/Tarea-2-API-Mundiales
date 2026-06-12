@@ -22,9 +22,15 @@
 ![GET /random](xh%20GET%20localhost4321random.png)
 
 ## GET /campeon/:pais
+![GET /campeon/Argentina](xh%20GET%204321campeonArgentina%20.png)
+
+## GET /campeon/:pais (Brasil)
 ![GET /campeon/Brasil](xh%20GET%20localhost4321campeonBrasil.png)
 
 ## GET /search/:text
+![GET /search/final](xh%20GET%204321searchfinal.png)
+
+## GET /search/:text (qatar)
 ![GET /search/qatar](xh%20GET%20localhost4321searchqatar.jpeg)
 
 ## GET /search/:text — 400 (texto muy corto)

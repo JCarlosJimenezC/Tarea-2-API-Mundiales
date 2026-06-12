@@ -108,32 +108,29 @@ xh GET localhost:4321/imagenes/qatar-2022.png
 
 ## Capturas de pruebas
 
-### Instalación y seed
-![pnpm install y seed](docs/pnpminstallypnpmrunseed.png)
+### `xh GET :4321/mundiales`
+![xh GET :4321/mundiales](docs/xh%20GET%20localhost4321mundiales.png)
 
-### GET /mundiales
-![GET /mundiales](docs/xh%20GET%20localhost4321mundiales.png)
+### `xh GET :4321/mundiales include==full`
+![xh GET :4321/mundiales include==full](docs/xh%20GET%20localhost4321mundiales%20include==full.png)
 
-### GET /mundiales?include=full
-![GET /mundiales?include=full](docs/xh%20GET%20localhost4321mundiales%20include==full.png)
+### `xh GET :4321/mundial/qatar-2022`
+![xh GET :4321/mundial/qatar-2022](docs/xh%20GET%20localhost4321mundialqatar-2022.png)
 
-### GET /mundial/:slug
-![GET /mundial/qatar-2022](docs/xh%20GET%20localhost4321mundialqatar-2022.png)
+### `xh GET :4321/mundial/inexistente` — 404 JSON
+![xh GET :4321/mundial/inexistente](docs/xh%20GET%20localhost4321mundialinexistente.png)
 
-### GET /mundial/:slug — 404
-![GET /mundial/inexistente](docs/xh%20GET%20localhost4321mundialinexistente.png)
+### `xh GET :4321/campeon/Argentina`
+![xh GET :4321/campeon/Argentina](docs/xh%20GET%204321campeonArgentina%20.png)
 
-### GET /random
-![GET /random](docs/xh%20GET%20localhost4321random.png)
+### `xh GET :4321/random`
+![xh GET :4321/random](docs/xh%20GET%20localhost4321random.png)
 
-### GET /campeon/:pais
-![GET /campeon/Argentina](docs/xh%20GET%204321campeonArgentina%20.png)
+### `xh GET :4321/search/final`
+![xh GET :4321/search/final](docs/xh%20GET%204321searchfinal.png)
 
-### GET /search/:text
-![GET /search/final](docs/xh%20GET%204321searchfinal.png)
-
-### GET /search/:text — 400
-![GET /search/ab](docs/xh%20GET%20localhost4321searchar.png)
+### `xh GET :4321/search/ab` — 400 JSON (mínimo 3)
+![xh GET :4321/search/ab](docs/xh%20GET%20localhost4321searchar.png)
 
 ---
 

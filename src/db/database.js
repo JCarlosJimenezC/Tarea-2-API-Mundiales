@@ -1,6 +1,6 @@
-import Database from "better-sqlite3";
+import { DatabaseSync } from "node:sqlite";
 import { cwd } from "node:process";
 
-const db = new Database(`${cwd()}/src/db/mundiales.db`);
+const db = new DatabaseSync(`${cwd()}/src/db/mundiales.db`);
 
 export default db;

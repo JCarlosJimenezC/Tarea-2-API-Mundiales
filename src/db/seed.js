@@ -26,7 +26,7 @@ const mundiales = [
     subcampeon: "Francia",
     goleador: "Kylian Mbappé",
     equipos: 32,
-    imagen: "qatar-2022.avif",
+    imagen: "qatar-2022.png",
     slug: "qatar-2022",
     resumen: "Argentina campeón tras una final épica ante Francia en penales.",
     descripcion: "Primer Mundial celebrado en Medio Oriente. Argentina conquistó su tercera estrella venciendo a Francia en una final histórica que terminó 3-3 y se resolvió en penales."
@@ -39,7 +39,7 @@ const mundiales = [
     subcampeon: "Croacia",
     goleador: "Harry Kane",
     equipos: 32,
-    imagen: "rusia-2018.avif",
+    imagen: "rusia-2018.png",
     slug: "rusia-2018",
     resumen: "Francia ganó su segunda Copa del Mundo superando a Croacia en la final.",
     descripcion: "Francia dominó el torneo con un juego colectivo sólido. Croacia llegó a su primera final mundialista tras superar a Inglaterra y Argentina en el camino."
@@ -52,7 +52,7 @@ const mundiales = [
     subcampeon: "Argentina",
     goleador: "James Rodríguez",
     equipos: 32,
-    imagen: "brasil-2014.avif",
+    imagen: "brasil-2014.png",
     slug: "brasil-2014",
     resumen: "Alemania conquistó su cuarta Copa del Mundo en suelo brasileño.",
     descripcion: "Alemania aplastó a Brasil 7-1 en semifinales en uno de los resultados más impactantes de la historia. Luego venció a Argentina 1-0 en la prórroga de la final."
@@ -65,7 +65,7 @@ const mundiales = [
     subcampeon: "Países Bajos",
     goleador: "David Villa",
     equipos: 32,
-    imagen: "sudafrica-2010.avif",
+    imagen: "sudafrica-2010.png",
     slug: "sudafrica-2010",
     resumen: "España ganó su primer Mundial con un gol de Iniesta en la prórroga.",
     descripcion: "Primer Mundial celebrado en África. España, campeón de Europa vigente, impuso su estilo de tiqui-taca y venció a Países Bajos con un gol de Andrés Iniesta en la prórroga."
@@ -78,7 +78,7 @@ const mundiales = [
     subcampeon: "Francia",
     goleador: "Miroslav Klose",
     equipos: 32,
-    imagen: "alemania-2006.avif",
+    imagen: "alemania-2006.png",
     slug: "alemania-2006",
     resumen: "Italia conquistó su cuarta Copa del Mundo venciendo a Francia en penales.",
     descripcion: "El torneo fue recordado por la expulsión de Zinedine Zidane en la final tras un cabezazo a Materazzi. Italia se impuso en la tanda de penales para ganar su cuarto título mundial."
@@ -91,37 +91,11 @@ const mundiales = [
     subcampeon: "Alemania",
     goleador: "Ronaldo",
     equipos: 32,
-    imagen: "corea-japon-2002.avif",
+    imagen: "corea-japon-2002.png",
     slug: "corea-japon-2002",
     resumen: "Brasil conquistó su quinto título mundial venciendo a Alemania 2-0 en la final.",
     descripcion: "Primer Mundial celebrado en Asia y el primero con dos países anfitriones. Ronaldo fue la gran figura con 8 goles, redimiendo su actuación en la final de 1998."
   },
-  {
-    nombre: "Copa Mundial Francia 1998",
-    anio: 1998,
-    sede: "Francia",
-    campeon: "Francia",
-    subcampeon: "Brasil",
-    goleador: "Davor Šuker",
-    equipos: 32,
-    imagen: "francia-1998.avif",
-    slug: "francia-1998",
-    resumen: "Francia ganó su primer Mundial jugando como local ante Brasil en la final.",
-    descripcion: "Zinedine Zidane marcó dos goles de cabeza y Francia venció a Brasil 3-0 en la final. Fue el primer mundial con 32 equipos y Croacia debutó llegando hasta el tercer lugar."
-  },
-  {
-    nombre: "Copa Mundial Estados Unidos 1994",
-    anio: 1994,
-    sede: "Estados Unidos",
-    campeon: "Brasil",
-    subcampeon: "Italia",
-    goleador: "Oleg Salenko",
-    equipos: 24,
-    imagen: "eeuu-1994.avif",
-    slug: "eeuu-1994",
-    resumen: "Brasil ganó su cuarto título mundial en la primera final decidida por penales.",
-    descripcion: "Roberto Baggio falló el penal decisivo en la primera final mundialista resuelta en tanda de penales. Brasil igualó a Alemania con cuatro títulos. El torneo batió récords de asistencia."
-  }
 ];
 
 const insert = db.prepare(`

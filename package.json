@@ -1,20 +1,19 @@
 {
-  "name": "Tarea-2-API-Mundiales",
+  "name": "tarea-2-api-mundiales",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-   "scripts": {
-    "dev": "pnpx servor src/ index.html 1234 --reload",
-    "build": "echo 'Build script'",
-    "deploy": "gh-pages -d src"
-  },
-
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.32.1",
+  "description": "API REST de Copas del Mundo FIFA",
   "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "seed": "node src/db/seed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "express": "^5.2.1",
+    "zod": "^4.4.3"
+  },
   "devDependencies": {
-    "servor": "^4.0.2"
-  }
+    "nodemon": "^3.1.14"
+  },
+  "packageManager": "pnpm@11.5.2"
 }

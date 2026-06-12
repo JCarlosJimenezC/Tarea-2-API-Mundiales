@@ -78,11 +78,10 @@ xh GET localhost:4321/random
 ---
 
 ### `GET /campeon/:pais`
-Lista todos los mundiales ganados por un país. Retorna `404` si no hay resultados.
+Lista los slugs de las ediciones ganadas por ese país. Retorna `404` si no hay resultados.
 
 ```bash
-xh GET localhost:4321/campeon/Brasil
-xh GET localhost:4321/campeon/Argentina
+xh GET :4321/campeon/Argentina
 ```
 
 ---
@@ -138,15 +137,20 @@ xh GET localhost:4321/imagenes/qatar-2022.png
 
 ```
 src/
-  app.js          # instancia Express y rutas
-  index.js        # arranque del servidor
+  app.js              # instancia Express y registro de rutas
+  index.js            # arranque del servidor (puerto 4321)
   db/
-    database.js   # conexión SQLite
-    seed.js       # creación e inserción de datos
+    database.js       # conexión SQLite (node:sqlite)
+    mundiales.js      # capa de acceso a datos (queries)
+    seed.js           # creación de tabla e inserción de datos
   routes/
-    mundiales.js      # handlers de las rutas
+    mundiales.js      # GET /mundiales
+    mundial.js        # GET /mundial/:slug
+    random.js         # GET /random
+    campeon.js        # GET /campeon/:pais
+    search.js         # GET /search/:text
     search.schema.js  # esquema Zod para búsqueda
 public/
-  imagenes/       # imágenes estáticas de los mundiales
-docs/             # capturas de pruebas con xh
+  imagenes/           # imágenes estáticas de los mundiales
+docs/                 # capturas de pruebas con xh
 ```

@@ -6,7 +6,7 @@ API REST construida con Node.js + Express + SQLite que expone información hist�
 
 - **Node.js** con ES Modules (`"type": "module"`)
 - **Express 5** — servidor HTTP
-- **better-sqlite3** — base de datos SQLite síncrona
+- **node:sqlite** — base de datos SQLite (módulo nativo de Node.js)
 - **Zod** — validación de parámetros de entrada
 - **nodemon** — recarga automática en desarrollo
 - **pnpm** — gestor de paquetes
@@ -105,6 +105,37 @@ Las imágenes de cada mundial se sirven desde `/imagenes/`.
 ```bash
 xh GET localhost:4321/imagenes/qatar-2022.png
 ```
+
+## Capturas de pruebas
+
+### Instalación y seed
+![pnpm install y seed](docs/pnpminstallypnpmrunseed.png)
+
+### GET /mundiales
+![GET /mundiales](docs/xh%20GET%20localhost4321mundiales.png)
+
+### GET /mundiales?include=full
+![GET /mundiales?include=full](docs/xh%20GET%20localhost4321mundiales%20include==full.png)
+
+### GET /mundial/:slug
+![GET /mundial/qatar-2022](docs/xh%20GET%20localhost4321mundialqatar-2022.png)
+
+### GET /mundial/:slug — 404
+![GET /mundial/inexistente](docs/xh%20GET%20localhost4321mundialinexistente.png)
+
+### GET /random
+![GET /random](docs/xh%20GET%20localhost4321random.png)
+
+### GET /campeon/:pais
+![GET /campeon/Argentina](docs/xh%20GET%204321campeonArgentina%20.png)
+
+### GET /search/:text
+![GET /search/final](docs/xh%20GET%204321searchfinal.png)
+
+### GET /search/:text — 400
+![GET /search/ab](docs/xh%20GET%20localhost4321searchar.png)
+
+---
 
 ## Estructura del proyecto
 

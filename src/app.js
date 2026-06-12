@@ -1,5 +1,9 @@
 import express from "express";
-import { getAll, getBySlug, getRandom, getByChampion, search } from "./routes/mundiales.js";
+import { getAll } from "./routes/mundiales.js";
+import { getBySlug } from "./routes/mundial.js";
+import { getRandom } from "./routes/random.js";
+import { getByChampion } from "./routes/campeon.js";
+import { search } from "./routes/search.js";
 
 const app = express();
 

@@ -13,6 +13,7 @@ app.get("/random", getRandom);
 app.get("/campeon/:pais", getByChampion);
 app.get("/search/:text", search);
 
+app.use("/imagenes", express.static("public/imagenes"));
 app.use(express.static("public"));
 
 app.use((req, res) => {

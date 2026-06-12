@@ -34,10 +34,10 @@ export const getRandom = (req, res) => {
 };
 
 export const getByChampion = (req, res) => {
-  const query = db.prepare("SELECT * FROM mundiales WHERE LOWER(campeon) = LOWER(?)");
+  const query = db.prepare("SELECT slug FROM mundiales WHERE LOWER(campeon) = LOWER(?)");
   const results = query.all(req.params.pais);
   if (!results.length) return res.status(404).json({ error: "No se encontraron mundiales para ese campeón" });
-  res.json(results);
+  res.json(results.map(item => item.slug));
 };
 
 export const search = (req, res) => {

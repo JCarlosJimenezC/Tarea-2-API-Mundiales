@@ -136,20 +136,17 @@ xh GET localhost:4321/imagenes/qatar-2022.png
 ## Estructura del proyecto
 
 ```
-src/
-  app.js              # instancia Express y registro de rutas
-  index.js            # arranque del servidor (puerto 4321)
-  db/
-    database.js       # conexión SQLite (node:sqlite)
-    mundiales.js      # capa de acceso a datos (queries)
-    seed.js           # creación de tabla e inserción de datos
-  routes/
-    mundiales.js      # GET /mundiales
-    mundial.js        # GET /mundial/:slug
-    random.js         # GET /random
-    campeon.js        # GET /campeon/:pais
-    search.js         # GET /search/:text
-    search.schema.js  # esquema Zod para búsqueda
+index.js              # entrada: Express, rutas y servidor (puerto 4321)
+data/
+  mundiales.js        # conexión SQLite + queries
+  seed.js             # creación de tabla e inserción de datos
+routes/
+  mundiales.js        # GET /mundiales
+  mundial.js          # GET /mundial/:slug
+  random.js           # GET /random
+  campeon.js          # GET /campeon/:pais
+  search.js           # GET /search/:text
+  search.schema.js    # esquema Zod para búsqueda
 public/
   imagenes/           # imágenes estáticas de los mundiales
 docs/                 # capturas de pruebas con xh

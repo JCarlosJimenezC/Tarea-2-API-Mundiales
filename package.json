@@ -4,8 +4,8 @@
   "description": "API REST de Copas del Mundo FIFA",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "seed": "node src/db/seed.js"
+    "dev": "nodemon index.js",
+    "seed": "node data/seed.js"
   },
   "dependencies": {
     "express": "^5.2.1",

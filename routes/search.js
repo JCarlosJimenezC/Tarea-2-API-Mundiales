@@ -1,4 +1,4 @@
-import * as mundial from "../db/mundiales.js";
+import * as mundial from "../data/mundiales.js";
 import schema from "./search.schema.js";
 
 const DEFAULT = "Búsqueda inválida";

@@ -1,4 +1,7 @@
-import db from "./database.js";
+import { DatabaseSync } from "node:sqlite";
+import { cwd } from "node:process";
+
+const db = new DatabaseSync(`${cwd()}/data/mundiales.db`);
 
 db.exec(`
   CREATE TABLE IF NOT EXISTS mundiales (
@@ -95,7 +98,7 @@ const mundiales = [
     slug: "corea-japon-2002",
     resumen: "Brasil conquistó su quinto título mundial venciendo a Alemania 2-0 en la final.",
     descripcion: "Primer Mundial celebrado en Asia y el primero con dos países anfitriones. Ronaldo fue la gran figura con 8 goles, redimiendo su actuación en la final de 1998."
-  },
+  }
 ];
 
 const insert = db.prepare(`

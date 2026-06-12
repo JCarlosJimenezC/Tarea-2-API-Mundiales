@@ -6,6 +6,8 @@ import { getByChampion } from "./routes/campeon.js";
 import { search } from "./routes/search.js";
 
 const app = express();
+const HOST = "localhost";
+const PORT = 4321;
 
 app.get("/", (req, res) => {
   res.json({ name: "API Mundiales FIFA", version: "1.0" });
@@ -24,4 +26,6 @@ app.use((req, res) => {
   res.status(404).json({ error: "Path not found" });
 });
 
-export default app;
+app.listen(PORT, HOST, () => {
+  console.log(`Server at http://${HOST}:${PORT}/`);
+});

@@ -1,4 +1,7 @@
-import db from "./database.js";
+import { DatabaseSync } from "node:sqlite";
+import { cwd } from "node:process";
+
+const db = new DatabaseSync(`${cwd()}/data/mundiales.db`);
 
 export const getAll = () => {
   const query = db.prepare("SELECT * FROM mundiales");
